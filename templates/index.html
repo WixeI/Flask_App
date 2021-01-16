@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Home page</title>
-    </head>
-    <body>
-        <h1>Home Page!</h1>
-        <p>Here are some links, {{content}}:</p>
-        <a href="https://www.youtube.com/watch?v=rJdHvKWvk3Q">Lofi Compilation</a>
-        {% for x in employees %}
-            {% if x == "Tim" %}
-                <p>X value is: {{x}}</p>
-            {% elif x == "Ann" %}
-                <p>{{x}} sure is cool</p>
-            {% endif %}
-        {% endfor %}
-    </body>
-</html>
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<h1>Teste</h1>
+{% endblock %}
